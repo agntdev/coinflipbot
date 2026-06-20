@@ -1,0 +1,13 @@
+[
+  {
+    "name": "/flip3 replies with three coin flip results",
+    "steps": [
+      {
+        "send": { "text": "/flip3" },
+        "expect": [
+          { "method": "sendMessage" }
+        ]
+      }
+    ]
+  }
+]
