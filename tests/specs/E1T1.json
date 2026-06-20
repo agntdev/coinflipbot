@@ -1,0 +1,13 @@
+[
+  {
+    "name": "/flip replies with Heads or Tails",
+    "steps": [
+      {
+        "send": { "text": "/flip" },
+        "expect": [
+          { "method": "sendMessage" }
+        ]
+      }
+    ]
+  }
+]
