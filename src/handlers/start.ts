@@ -12,7 +12,7 @@ composer.command("start", async (ctx) => {
 });
 
 composer.callbackQuery("help", async (ctx) => {
-  await ctx.answerCallbackQuery();
+  await ctx.answerCallbackQuery().catch(() => {});
   await ctx.reply("Available commands:\n/start — Welcome message\n/help — This help text");
 });
 
