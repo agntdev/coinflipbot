@@ -8,7 +8,7 @@ composer.command("start", async (ctx) => {
   const keyboard = inlineKeyboard([
     [inlineButton("Help", "help")],
   ]);
-  await ctx.reply("Welcome! I am ready to help.", { reply_markup: keyboard });
+  await ctx.reply("Welcome! Commands: /flip /flip3 /help", { reply_markup: keyboard });
 });
 
 composer.callbackQuery("help", async (ctx) => {
