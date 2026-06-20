@@ -8,7 +8,7 @@
           {
             "method": "sendMessage",
             "payload": {
-              "text": "Welcome! I am ready to help.",
+              "text": "Welcome! Commands: /flip /flip3 /help",
               "reply_markup": {
                 "inline_keyboard": [
                   [{ "text": "Help", "callback_data": "help" }]
