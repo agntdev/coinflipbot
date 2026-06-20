@@ -1,9 +1,9 @@
 import { buildBot } from "./bot.js";
 
 async function main() {
-  const token = process.env.BOT_TOKEN;
+  const token = process.env.TELEGRAM_BOT_TOKEN;
   if (!token) {
-    console.error("BOT_TOKEN is required");
+    console.error("TELEGRAM_BOT_TOKEN is required");
     process.exit(1);
   }
   const bot = await buildBot(token);
