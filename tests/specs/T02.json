@@ -1,6 +1,6 @@
 [
   {
-    "name": "/start replies with a welcome and main menu",
+    "name": "/start sends welcome with main menu and Help button routes to help text",
     "steps": [
       {
         "send": { "text": "/start" },
@@ -14,6 +14,18 @@
                   [{ "text": "Help", "callback_data": "help" }]
                 ]
               }
+            }
+          }
+        ]
+      },
+      {
+        "send": { "callback": "help" },
+        "expect": [
+          { "method": "answerCallbackQuery" },
+          {
+            "method": "sendMessage",
+            "payload": {
+              "text": "Available commands:\n/start — Welcome message\n/help — This help text"
             }
           }
         ]
