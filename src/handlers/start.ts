@@ -13,7 +13,7 @@ composer.command("start", async (ctx) => {
 
 composer.callbackQuery("help", async (ctx) => {
   await ctx.answerCallbackQuery().catch(() => {});
-  await ctx.reply("Available commands:\n/start — Welcome message\n/help — This help text");
+  await ctx.reply("Available commands:\n/start — Welcome message\n/help — This help text\n/flip — Flip a coin\n/flip3 — Flip three coins");
 });
 
 export default composer;
