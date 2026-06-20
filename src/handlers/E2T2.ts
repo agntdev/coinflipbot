@@ -4,7 +4,7 @@ import type { Ctx } from "../bot.js";
 const composer = new Composer<Ctx>();
 
 composer.command("help", async (ctx) => {
-  await ctx.reply("Available commands:\n/start — Welcome message\n/help — This help text");
+  await ctx.reply("Available commands:\n/start — Welcome message\n/flip — Flip a coin\n/flip3 — Flip three coins\n/help — This help text");
 });
 
 export default composer;
